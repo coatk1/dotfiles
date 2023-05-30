@@ -1,0 +1,23 @@
+# EditorConfig: https://EditorConfig.org
+
+# Plugins -> Plugins Admin -> EditorConfig
+
+# top-most EditorConfig file
+root = true
+
+[*]
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Indentation override for all python files under directory
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Matches multiple files with brace expansion notation
+[*.{yml, json, html, css, js, cmd, bat, sh}]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
