@@ -1,27 +1,184 @@
-// AppData\Romaing\Code\User
+// Visual Studio Code Version: 1.81.0
+
+// C:\Users\Corey\AppData\Roaming\Code\User
 
 {
-    "workbench.colorTheme": "Default Light+",
-    "editor.accessibilitySupport": "off",
-    "webhint.enableTelemetry": "disabled",
-    "python.dataScience.alwaysTrustNotebooks": true,
+    // Notebook
+    // "python.dataScience.alwaysTrustNotebooks": true,
+    // "notebook.logging": true,
+    "notebook.lineNumbers": "on",
+    "notebook.output.scrolling": true,
+
+    // Formatter
     "python.formatting.provider": "black",
+    "black-formatter.path": [
+        "C:\\Users\\Corey\\Miniconda3\\envs\\dev\\Scripts\\black.exe"
+    ],
+    "black-formatter.args": [
+        "--line-length=100",
+    ],
+
+    // Linting
     "python.linting.pylintEnabled": false,
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+
+    // Flake8
     "python.linting.flake8Enabled": true,
+    "flake8.path": [
+        "C:\\Users\\Corey\\Miniconda3\\envs\\dev\\Scripts\\flake8.exe"
+    ],
+    "flake8.args": [
+        "--ignore=E501, F403, E126, E128",
+        "--max-line-length=120",
+    ],
+
+    // Pydocstyle
     "python.linting.pydocstyleEnabled": true,
+    "python.formatting.pydocstylePath": "C:\\Users\\Corey\\Miniconda3\\envs\\dev\\Scripts\\pydocstyle.exe",
+
+    // Docstring
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeName": true,
+    "autoDocstring.docstringFormat": "numpy",
+
+    // Window
+    "files.autoSave": "off",
     "editor.rulers": [
         79, 119
     ],
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 10,
     "window.zoomLevel": 0,
+    "editor.fontSize": 14,
     "files.exclude": {
-        "**/.pytest_cache": true,
+        "**/pytest_cache": true,
         "**/__pycache__": true,
-        "**.ipynb_checkpoints": true,
+        "**/.ipynb_checkpoints": true,
     },
     "files.insertFinalNewline": true,
-    "files.trimFinalNewLines": true,
+    "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "explorer.confirmDelete": true,
     "explorer.confirmDragAndDrop": true,
+    "editor.accessibilitySupport": "off",
+
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        // "PowerShell": {
+        //     "source": "PowerShell",
+        //     "icon": "terminal-powershell"
+        // },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "python.defaultInterpreterPath": "C:\\Users\\Corey\\Miniconda3\\envs\\dev\\python.exe",
+    "terminal.integrated.cwd": "C:\\Users\\Corey\\Documents\\Projects",
+    "python.terminal.activateEnvironment": true,
+
+    // Even Better Comments
+    "better-comments.highlightPlainText": true,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "aliases": [
+                "Issue",
+                "problem",
+                "bug",
+            ],
+            "color": "#FF2D00",
+            "overline": false,
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+        {
+            "tag": "?",
+            "aliases": [
+                "Idea",
+                "Info",
+            ],
+            "color": "#3498DB",
+            "overline": false,
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+        {
+            "tag": "//",
+            "aliases": [
+                "-----",
+            ],
+            "color": "#474747",
+            "overline": false,
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+        {
+            "tag": "TODO",
+            "color": "#FF8C00",
+            "overline": false,
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+        {
+            "tag": "*",
+            "aliases": [
+                "Important",
+                "WIP",
+                "~~~~~",
+            ],
+            "color": "#98C379",
+            "overline": false,
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+        {
+            "tag": "NOTE",
+            "color": "#0051ff",
+            "overline": false,
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false,
+        },
+    ],
+
+    // Other
+    "workbench.colorTheme": "Default Light+",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.csv": "gc-excelviewer-csv-editor",
+    },
+    "csv-preview.lineNumbers": "source",
 }
