@@ -11,8 +11,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
-envs/
+*env/
+*envs/
 notebooks/cluster_app/env/
 notebooks/iris/env/
 notebooks/test_nb/env/
@@ -22,6 +22,7 @@ dist/
 downloads/
 eggs/
 .eggs/
+# If using the lib/, add the inversion rule (e.g. !lib/)
 lib/
 lib64/
 parts/
@@ -65,6 +66,7 @@ local_settings.py
 # Flask stuff:
 instance/
 .webassets-cache
+*.db
 
 # Scrapy stuff:
 .scrapy
@@ -110,7 +112,12 @@ ENV/
 
 # IDE settings
 # .vscode/
-# .idea/
+.idea/
+
+# Files
+# *.csv
+# *.xlsx
+# *.parquet
 
 # Logs
 logs
@@ -134,16 +141,16 @@ coverage
 # nyc test converage
 .nyc_output
 
-# Grunt intermediate storage
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# Bower dependency directory
+# Bower dependency directory (https://bower.io/)
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons
+# Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
