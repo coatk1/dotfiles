@@ -7,11 +7,10 @@ Generate key pair.
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-Launch ssh-agent to run.
+Launch ssh-agent to run. (Run in git)
 ```bash
 # start the ssh-agent in the background
 $ eval $(ssh-agent -s)
-> Agent pid 59566
 ```
 
 or 
@@ -21,6 +20,12 @@ exec ssh-agent bash
 ```
 
 Add ssh private key to ssh-agent.
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+or
+
 ```bash
 ssh-add ~/.ssh/id_rsa
 ```
