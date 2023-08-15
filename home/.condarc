@@ -3,7 +3,8 @@ channels:
   - defaults
 ssl_verify: True
 channel_priority: strict
+anaconda_upload: False
 envs_dirs:
-  - C:\Users\Corey\AppData\Local\conda\conda\envs
+  - C:\Users\catki\miniconda3\envs
 pkgs_dirs:
-  - C:\Users\Corey\AppData\Local\conda\conda\pkgs
+  - C:\Users\catki\miniconda3\pkgs
