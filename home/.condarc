@@ -1,8 +1,9 @@
 always_copy: false
 channels:
   - defaults
+ssl_verify: True
 channel_priority: strict
 envs_dirs:
-  - 
+  - C:\Users\Corey\AppData\Local\conda\conda\envs
 pkgs_dirs:
-  -
+  - C:\Users\Corey\AppData\Local\conda\conda\pkgs
