@@ -1,5 +1,7 @@
 # Setup Commands
 
+**Note**: Each device has it's own key.
+
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
