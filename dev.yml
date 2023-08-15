@@ -22,6 +22,7 @@ dependencies:
   # - line_profiler           # For code profiling runtime on cli.
   # - memory_profiler         # For code profiling runtime in files.
   # - pytz                    # Jupyter dependency.
+  - pip
 
   # Web Scraping
   # - requests                # Accessing urls. Jupyter dependency.
