@@ -7,7 +7,9 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 ```bash
-$ eval "$(ssh-agent -s)"
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+> Agent pid 59566
 ```
 
 or 
