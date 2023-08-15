@@ -2,3 +2,7 @@ always_copy: false
 channels:
   - defaults
 channel_priority: strict
+envs_dirs:
+  - 
+pkgs_dirs:
+  -
