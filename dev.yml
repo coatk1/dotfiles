@@ -136,6 +136,7 @@ dependencies:
   # - anaconda-client         # Reaches out to Anaconda cloud
   # - conda-build             # Build conda package
   # - anaconda-project        # For projects that use Anaconda
+  # - condastats              # Statistics for conda packages
 
   - pip:
     - pipdeptree
