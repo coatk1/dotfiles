@@ -25,5 +25,8 @@
 [color]
     ui = true
 
+# [hub]
+#     host = github.com
+
 [init]
     defaultBranch = master
