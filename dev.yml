@@ -141,5 +141,5 @@ dependencies:
 
   - pip:
     - pipdeptree
-    - --index-url https://pypi.org
-    - --trusted-host pypi.org
+    # - --index-url https://pypi.org
+    # - --trusted-host pypi.org
