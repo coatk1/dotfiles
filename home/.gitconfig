@@ -34,7 +34,7 @@
     last = log -1 HEAD
 
     # Setup
-    i - init
+    i = init
 
     # Stages
     d = diff --color --ignore-all-space --ignore-blank-lines
@@ -63,7 +63,7 @@
     # Status
     st = status
     sts = st --short
-    
+
     # Remote
     cl = clone
     rau = remote add upstream
