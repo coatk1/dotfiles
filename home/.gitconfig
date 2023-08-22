@@ -72,6 +72,8 @@
     # Tags
     t = tag
     pt = pho --tags
+    td = t --delete
+    tdp = ph --delete origin
 
     # Pull and merge upstreams
     fu = fetch upstream
