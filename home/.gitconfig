@@ -4,29 +4,91 @@
 
 [alias]
     a = add -A
-    cl = config --list --show-origin
+
+    # Branches
+    b = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(commiterdate:relative)) [%(authorname)]' --sort=-committerdate
+    ba = branch -a
+    co = checkout
     cob = checkout -b
-    d = diff --color --ignore-all-space --ignore-blank-lines
-    ds = diff --color --ignore-all-space --ignore-blank-lines --staged
+    default = !basename $(git symbolic-ref --short refs/remotes/origin/HEAD)  # Dynamically determine master vs main for the current repo
+    m = merge
+
+    # Branch Delete
+    bd = branch -d
+    bdf = branch -D  # Delete Force
+    bdr = push origin -d  # Push deleted branch to remote
+
+    # Commit
+    cm = commit -m
+    cam = commit -am
+
+    # Config
+    cls = config --list --show-origin
+    gcl = config --global --list
+    gcon = config --global
+
+    # Log
     l = log --graph --oneline --decorate
+    lg = log --graph --abbrev-commit --decorate --date=relative --all --pretty=format'%C(red)%h%C(reset)-%C(yellow)%d%Creset %Cgreen(%cr) %s %C(bold blue)<%an>%Creset'
+    # l = log --color --graph --pretty=format'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -- abbrev-commit
     last = log -1 HEAD
-    ss = status --short
+
+    # Setup
+    i - init
+
+    # Stages
+    d = diff --color --ignore-all-space --ignore-blank-lines
+    dsg = d --staged
+    dst = d --stat
+    dc = d --cached
+    ph = push
+    pho = ph origin
+    pl = pull
+    plo = pl origin
+    r = reset
+    rbc = rebase --continue
+    rbm = !git rebase $(git default)
+    rpo = remote prune origin
+    undo = reset HEAD~1 --mixed
     unstage = reset HEAD --
+    # rmc = rm --cached --ignore-unmatch
+    # rmf = filter-branch --force --index-filter "git rmc PATH-TO-YOUR-FILE-WITH-S***-DATA" --prune-empty --tag-name-filter cat -- --all
+
+    # Stash Apply
+    sa = stash pop
+    sp = stash push
+    sl = stash list
+    ss = stash save
+
+    # Status
+    st = status
+    sts = st --short
     
     # Remote
+    cl = clone
     rau = remote add upstream
     rv = remote -v
-    
+
+    # Tags
+    t = tag
+    pt = pho --tags
+
     # Pull and merge upstreams
     fu = fetch upstream
-    com = checkout master
-    mum = merge upstream/master
+    com = !git co $(git default)  # Checkout main or master
+    mum = !git merge upstream/$(git default)
+    visual = !gitk
+
+    # filter-branch --force --index-filter "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-S***-DATA" --prune-empty --tag-name-filter cat -- --all
 
 [color]
     ui = true
 
-# [hub]
-#     host = github.com
+[hub]
+    host = github.com
 
 [init]
     defaultBranch = master
+
+[commit]
+    verbose = true
