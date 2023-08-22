@@ -22,7 +22,7 @@ dependencies:
   # - line_profiler           # For code profiling runtime on cli.
   # - memory_profiler         # For code profiling runtime in files.
   # - pytz                    # Jupyter dependency.
-  - pip
+  - pip>=23.0.0
 
   # Web Scraping
   # - requests                # Accessing urls. Jupyter dependency.
@@ -89,12 +89,13 @@ dependencies:
   - matplotlib>=3.7         # Data visualization
   - seaborn>=0.10           # Data visualization
   # - bokeh                   # Data visualization/ interaction
+  - wordcloud
 
   # Machine Learning
   - pytorch>=1.13.1
   - scikit-learn>=1.2       # Machine Learning
   - sentencepiece
-  # - imbalanced-learn
+  - imbalanced-learn
   # - tensorflow>=2.9
 
   # Code Linters
@@ -138,6 +139,7 @@ dependencies:
   # - conda-build             # Build conda package
   # - anaconda-project        # For projects that use Anaconda
   # - condastats              # Statistics for conda packages
+  # - cookiecutter>=1.7.2
 
   - pip:
     - pipdeptree
