@@ -29,5 +29,6 @@ RandomFractalsInc.geo-data-viewer
 streetsidesoftware.code-spell-checker
 Tion.evenbettercomments
 tomoki1207.pdf
+trond-snekvik.simple-rst
 vscode-icons-team.vscode-icons
 ZainChen.json
