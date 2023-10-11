@@ -2,12 +2,13 @@
 name: dev
 
 channels:
+  - pytorch
   - defaults
   - conda-forge
 
 dependencies:
 
-  # Updated: 08/15/2023
+  # Updated: 10/11/2023
 
   # Python Related
   - python=3.10             # Python version 3 and above.
@@ -66,7 +67,6 @@ dependencies:
   - pandoc>=2.12            # Universal markup converter
   - pypdf2                  # PDF files
   - tabulate>=0.8.10        # Markdown tables
-  # - python-docx             # Word Documents
 
   # Geospatial
   - geojson>=2.5            # GeoJson
@@ -143,5 +143,6 @@ dependencies:
 
   - pip:
     - pipdeptree
+    - pdf2docx                # Word Documents
     # - --index-url https://pypi.org
     # - --trusted-host pypi.org
