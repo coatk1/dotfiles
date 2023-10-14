@@ -49,8 +49,9 @@ dependencies:
 
   # Databases
   - psycopg2>=2.9           # Databases
-  # - sqlalchemy              # Databases
+  - sqlalchemy              # Databases
   - ijson                   # Parsing json files
+  - sqlite3
 
   # File Types
   - openpyxl>=3.0           # Excel files in Python
