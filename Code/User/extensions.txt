@@ -25,6 +25,7 @@ oderwat.indent-rainbow
 P-de-Jong.vscode-html-scss
 pdconsec.vscode-print
 PKief.material-product-icons
+qwtel.sqlite-viewer
 RandomFractalsInc.geo-data-viewer
 streetsidesoftware.code-spell-checker
 Tion.evenbettercomments
