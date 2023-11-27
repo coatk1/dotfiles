@@ -1,6 +1,6 @@
 // Visual Studio Code Version: 1.81.0
 
-// C:\Users\Corey\AppData\Roaming\Code\User
+// C:\Users\catki\AppData\Roaming\Code\User
 
 {
     // Notebook
@@ -201,4 +201,6 @@
     "update.showReleaseNotes": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.startupEditor": "none",
+    "editor.fontFamily": "Consolas, monospace",
+    "terminal.integrated.fontFamily": "Consolas, monospace",
 }
