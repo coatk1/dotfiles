@@ -39,8 +39,8 @@
     ],
 
     // Pydocstyle
-    "python.linting.pydocstyleEnabled": true,
-    "python.formatting.pydocstylePath": "C:\\Users\\catki\\miniconda3\\envs\\dev\\Scripts\\pydocstyle.exe",
+    // "python.linting.pydocstyleEnabled": true,
+    // "python.formatting.pydocstylePath": "C:\\Users\\catki\\miniconda3\\envs\\dev\\Scripts\\pydocstyle.exe",
 
     // Docstring
     "autoDocstring.includeExtendedSummary": true,
@@ -184,7 +184,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.productIconTheme": "material-product-icons",
     "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.callArgumentNames": true,
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.typeCheckingMode": "basic",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
