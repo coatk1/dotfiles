@@ -173,17 +173,19 @@
     ],
 
     // Other
-    "workbench.colorTheme": "Default Light+",  // Default Light+, Solarized Dark, Solarized Light, Tomorrow Night Blue
+    "workbench.colorTheme": "Default Light+",  // Default Light+, Monokai Dimmed, Tomorrow Night Blue
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.iconTheme": "vscode-icons",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.csv": "gc-excelviewer-csv-editor",
+        "*.db": "sqlite-viewer.option",
     },
     "csv-preview.lineNumbers": "source",
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.productIconTheme": "material-product-icons",
     "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "off",
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.typeCheckingMode": "basic",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
