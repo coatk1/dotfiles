@@ -1,6 +1,6 @@
 // Visual Studio Code Version: 1.81.0
 
-// C:\Users\catki\AppData\Roaming\Code\User
+// C:\Users\corey\AppData\Roaming\Code\User
 
 {
     // Notebook
@@ -12,7 +12,7 @@
     // Formatter
     // "python.formatting.provider": "black",
     "black-formatter.path": [
-        "C:\\Users\\catki\\miniconda3\\envs\\dev\\Scripts\\black.exe"
+        "C:\\Users\\corey\\miniconda3\\envs\\dev\\Scripts\\black.exe"
     ],
     "black-formatter.args": [
         "--line-length=100",
@@ -31,7 +31,7 @@
     // Flake8
     // "python.linting.flake8Enabled": true,
     "flake8.path": [
-        "C:\\Users\\catki\\miniconda3\\envs\\dev\\Scripts\\flake8.exe"
+        "C:\\Users\\corey\\miniconda3\\envs\\dev\\Scripts\\flake8.exe"
     ],
     "flake8.args": [
         "--ignore=E501, F403, E126, E128",
@@ -40,7 +40,7 @@
 
     // Pydocstyle
     // "python.linting.pydocstyleEnabled": true,
-    // "python.formatting.pydocstylePath": "C:\\Users\\catki\\miniconda3\\envs\\dev\\Scripts\\pydocstyle.exe",
+    // "python.formatting.pydocstylePath": "C:\\Users\\corey\\miniconda3\\envs\\dev\\Scripts\\pydocstyle.exe",
 
     // Docstring
     "autoDocstring.includeExtendedSummary": true,
@@ -79,16 +79,19 @@
                 "${env:windir}\\Sysnative\\cmd.exe",
                 "${env:windir}\\System32\\cmd.exe"
             ],
-            "args": [],
+            "args": [
+                "/K",
+                "C:\\Users\\corey\\miniconda3\\Scripts\\activate.bat dev"
+            ],
             "icon": "terminal-cmd"
         },
         "Git Bash": {
             "source": "Git Bash"
         }
     },
-    "python.defaultInterpreterPath": "C:\\Users\\catki\\miniconda3\\envs\\dev\\python.exe",
-    "terminal.integrated.cwd": "C:\\Users\\catki\\Documents\\Projects",
-    "python.terminal.activateEnvironment": true,
+    "python.defaultInterpreterPath": "C:\\Users\\corey\\miniconda3\\envs\\dev\\python.exe",
+    "terminal.integrated.cwd": "C:\\Users\\corey\\Documents\\Projects",
+    "python.terminal.activateEnvironment": false,
 
     // Even Better Comments
     "evenbettercomments.highlightPlainText": true,
